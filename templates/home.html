@@ -1,0 +1,135 @@
+{% load static %}
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+        content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Acceuil</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <script src="https://kit.fontawesome.com/1eb8199e49.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" type="text/css" href=" {% static 'css/styles.css' %} ">
+</head>
+
+<body>
+    <header>
+        <div class="container-fluid header">
+            <div class="d-flex align_items_center justify-content-center justify-content-between">
+                <div class="logo">
+                    <i class="fab fa-bootstrap mt-1 icon d-inline"></i>
+                    <p class="d-inline title ">Boostrap utilities</p>
+                </div>
+                <div class="mt-2">
+                    <div class="d-table-row p-2 text-white">Le code de cet exemple <a href="">ici</a></div>
+                    <div class="d-table-row p-2 text-white">Clique <a
+                            href="https://getbootstrap.com/docs/4.3/utilities/borders/">ici</a> pour plus d'exemle</div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <div class="container">
+        <div class="d-flex align_items_center justify-content-center justify-content-around">
+            <span class="border "> border</span>
+            <span class="border-top border-primary">border top</span>
+            <span class="border-right">border right</span>
+            <span class="border-bottom border-danger">border bottom</span>
+            <span class="border-left">border left</span>
+        </div>
+    </div>
+    <div class="container mt-3">
+        <div class="d-flex align_items_center justify-content-center justify-content-around">
+            <div class="p-2 rounded-top bg-primary text-white">rounded-top</div>
+            <div class="p-2 rounded-bottom bg-primary text-white">rounded-bottom</div>
+            <div class="p-2 rounded-left bg-primary text-white">rounded-left</div>
+        </div>
+    </div>
+    <div class="container">
+        <p></p>
+        <div class="mt-2 clearfix">
+            <button type="button" class="btn btn-secondary float-left">Example Button floated left</button>
+            <button type="button" class="btn btn-secondary float-right">Example Button floated right</button>
+        </div>
+    </div>
+    <div class="container">
+        <button type="button" class="close" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+        </button>
+    </div>
+    <div class="container mt-5">
+        <div class="d-inline p-2 bg-primary text-white">d-inline</div>
+        <div class="d-inline p-2 bg-dark text-white">d-inline</div>
+    </div>
+    <div class="container mt-5">
+        <div class="d-block p-2 bg-primary text-white">d-inline</div>
+        <div class="d-block p-2 bg-dark text-white">d-inline</div>
+    </div>
+    <div class="container mt-5">
+        <div class="d-table-cell p-2 bg-primary text-white">d-inline</div>
+        <div class="d-table-cell p-2 bg-dark text-white">d-inline</div>
+    </div>
+    <div class="container mt-5">
+        <div class="d-table-row p-2 bg-primary text-white">d-inline</div>
+        <div class="d-table-row p-2 bg-dark text-white">d-inline</div>
+    </div>
+    <div class="container">
+        <div class="d-flex flex-row bd-highlight mb-3">
+            <div class="p-2 bd-highlight">Flex item 1</div>
+            <div class="p-2 bd-highlight">Flex item 2</div>
+            <div class="p-2 bd-highlight">Flex item 3</div>
+        </div>
+    </div>
+    <div class="container">
+        <div class="d-flex flex-column bd-highlight mb-3">
+            <div class="p-2 bd-highlight">Flex item 1</div>
+            <div class="p-2 bd-highlight">Flex item 2</div>
+            <div class="p-2 bd-highlight">Flex item 3</div>
+        </div>
+    </div>
+    <div class="container">
+        <div class="float-left">Float left on all viewport sizes</div><br>
+        <div class="float-right">Float right on all viewport sizes</div><br>
+        <div class="float-none">Don't float on all viewport sizes</div>
+    </div>
+    <div class="container">
+        <div class="shadow-none p-3 mb-5 bg-light rounded">No shadow</div>
+        <div class="shadow-sm p-3 mb-5 bg-white rounded">Small shadow</div>
+        <div class="shadow p-3 mb-5 bg-white rounded">Regular shadow</div>
+        <div class="shadow-lg p-3 mb-5 bg-white rounded">Larger shadow</div>
+    </div>
+    <div class="container">
+        <div class="w-25 p-3" style="background-color: #eee;">Width 25%</div>
+        <div class="w-50 p-3" style="background-color: #eee;">Width 50%</div>
+        <div class="w-75 p-3" style="background-color: #eee;">Width 75%</div>
+        <div class="w-100 p-3" style="background-color: #eee;">Width 100%</div>
+        <div class="w-auto p-3" style="background-color: #eee;">Width auto</div>
+    </div>
+    <div class="container">
+        <div style="height: 100px; background-color: rgba(255,0,0,0.1);">
+            <div class="h-25 d-inline-block" style="width: 120px; background-color: rgba(0,0,255,.1)">Height 25%</div>
+            <div class="h-50 d-inline-block" style="width: 120px; background-color: rgba(0,0,255,.1)">Height 50%</div>
+            <div class="h-75 d-inline-block" style="width: 120px; background-color: rgba(0,0,255,.1)">Height 75%</div>
+            <div class="h-100 d-inline-block" style="width: 120px; background-color: rgba(0,0,255,.1)">Height 100%</div>
+            <div class="h-auto d-inline-block" style="width: 120px; background-color: rgba(0,0,255,.1)">Height auto
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <table style="height: 100px;">
+            <tbody>
+                <tr>
+                    <td class="align-baseline">baseline</td>
+                    <td class="align-top">top</td>
+                    <td class="align-middle">middle</td>
+                    <td class="align-bottom">bottom</td>
+                    <td class="align-text-top">text-top</td>
+                    <td class="align-text-bottom">text-bottom</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</body>
+
+</html>

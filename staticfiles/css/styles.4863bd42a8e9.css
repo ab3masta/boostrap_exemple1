@@ -1,0 +1,23 @@
+header .header {
+    width: 100%;
+    margin-left: 0;
+    margin-right: 0;
+    height: 70px;
+    line-height: 70px;
+    background-color: rgba(0, 0, 0,0);
+    position: fixed;
+    top:0px;
+    z-index: 999;
+}
+
+.title {
+    font-size: 25px;
+}
+
+.icon {
+    color: #563d7c;
+    font-size: 40px;
+}
+.logo{
+    margin-top: 10px;
+}
